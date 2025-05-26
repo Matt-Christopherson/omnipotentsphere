@@ -1,0 +1,16 @@
+.baby:hover {
+  filter: brightness(200%);
+}
+
+#baby-shelf {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: playfair;
+  background-color: #18161B;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 30px;
+  color: #F6F4F1;
+}
