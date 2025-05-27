@@ -1,14 +1,13 @@
 import './BabyJar.css'
 
-function BabyJar(props) {
-
+function BabyJar({image, caption, onSelect}) {
     return (
-        <a href={props.link}>
+        <button onClick={onSelect}>
             <figure>
-                <img src={props.image} alt="baby specimen in a jar" class="baby" />
-                <figcaption>{props.caption}</figcaption>
+                <img src={image} alt="baby specimen in a jar" className="baby" />
+                <figcaption>{caption}</figcaption>
             </figure>
-        </a>
+        </button>
     )
 }
 

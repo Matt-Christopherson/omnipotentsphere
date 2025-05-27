@@ -1,3 +1,23 @@
+a:link,
+a:visited {
+  color: #F0EBE5;
+  text-decoration: none;
+  cursor: auto;
+}
+
+a:link:active,
+a:visited:active {
+  color: #1FA055;
+}
+
+button {
+  all: unset;
+}
+
+button:focus {
+  outline: revert;
+}
+
 .baby:hover {
   filter: brightness(200%);
 }
