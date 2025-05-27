@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/omnipotentsphere/assets/token_1-BTeaM2y8.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OMNIPOTENT SPHERE</title>
+    <script type="module" crossorigin src="/omnipotentsphere/assets/index-Du5GQg7X.js"></script>
+    <link rel="stylesheet" crossorigin href="/omnipotentsphere/assets/index-DvSSs-VK.css">
+  </head>
+  <body>
+    <img src="/omnipotentsphere/assets/dragon-orb-D33xPZgP.gif">
+    <div id="title-container">
+      <h1 id="title">OMNIPOTENTSPHERE</h1>
+    </div>
+    <div id="root"></div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
+
+  <script>
+    // Instantiate `CircleType` with an HTML element.
+    const circleType = new CircleType(document.getElementById('title'));
+
+    // Set the text radius and direction. Note: setter methods are chainable.
+    circleType.radius(50).dir(-1);
+
+    // Provide your own splitter function to handle emojis
+    // @see https://github.com/orling/grapheme-splitter
+    const splitter = new GraphemeSplitter()
+    new CircleType(
+      document.getElementById('myElement'),
+      splitter.splitGraphemes.bind(splitter));
+  </script>
+</html>
